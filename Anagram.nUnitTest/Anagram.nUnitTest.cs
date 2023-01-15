@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
+﻿using Anagram.App;
+using NUnit.Framework;
 using System.IO;
-using Anagram.App;
 
-namespace Anagram.Test
+namespace Anagram.nUnitTest
 {
-    public class AnagramUnitTest
+    public class AnagramnUnitTest
     {
         public AnagramManager anagram;
 

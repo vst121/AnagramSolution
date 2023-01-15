@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.App", "Anagram.App\Anagram.App.csproj", "{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram.App", "Anagram.App\Anagram.App.csproj", "{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.Test", "Anagram.Test\Anagram.Test.csproj", "{BAE6ADDD-E453-4564-BA20-E6B69E5EC9AF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B} = {D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.xUnitTest", "Anagram.xUnitTest\Anagram.xUnitTest.csproj", "{A15469F3-BCAC-44F6-9031-5471D7A2DB66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.nUnitTest", "Anagram.nUnitTest\Anagram.nUnitTest.csproj", "{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.MSTest", "Anagram.MSTest\Anagram.MSTest.csproj", "{0A344897-F858-4F1A-9737-FFF5EAB541EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +21,18 @@ Global
 		{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BAE6ADDD-E453-4564-BA20-E6B69E5EC9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BAE6ADDD-E453-4564-BA20-E6B69E5EC9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BAE6ADDD-E453-4564-BA20-E6B69E5EC9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BAE6ADDD-E453-4564-BA20-E6B69E5EC9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15469F3-BCAC-44F6-9031-5471D7A2DB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15469F3-BCAC-44F6-9031-5471D7A2DB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15469F3-BCAC-44F6-9031-5471D7A2DB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15469F3-BCAC-44F6-9031-5471D7A2DB66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A344897-F858-4F1A-9737-FFF5EAB541EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A344897-F858-4F1A-9737-FFF5EAB541EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A344897-F858-4F1A-9737-FFF5EAB541EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A344897-F858-4F1A-9737-FFF5EAB541EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
