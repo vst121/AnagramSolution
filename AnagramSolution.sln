@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram.App", "Anagram.App\Anagram.App.csproj", "{D0FE24C7-FCC6-4258-91DE-190F4C12DD5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.xUnitTest", "Anagram.xUnitTest\Anagram.xUnitTest.csproj", "{A15469F3-BCAC-44F6-9031-5471D7A2DB66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram.xUnitTest", "Anagram.xUnitTest\Anagram.xUnitTest.csproj", "{A15469F3-BCAC-44F6-9031-5471D7A2DB66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.nUnitTest", "Anagram.nUnitTest\Anagram.nUnitTest.csproj", "{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram.nUnitTest", "Anagram.nUnitTest\Anagram.nUnitTest.csproj", "{73304BAA-E1F5-4329-AE10-E5BA1A2F7347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagram.MSTest", "Anagram.MSTest\Anagram.MSTest.csproj", "{0A344897-F858-4F1A-9737-FFF5EAB541EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anagram.MSTest", "Anagram.MSTest\Anagram.MSTest.csproj", "{0A344897-F858-4F1A-9737-FFF5EAB541EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
