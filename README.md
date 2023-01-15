@@ -1,4 +1,4 @@
-# AnagramSolution
+# Anagram Solution
 
 #### Accroding to definition of anagram, An anagram is a word or phrase formed by rearranging the letters in another word or phrase. It is important to note that the word or phrases that an anagram creates must be actual words or phrases, otherwise it is just gibberish.
 
