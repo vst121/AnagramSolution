@@ -11,8 +11,13 @@ namespace Anagram.Test
         [SetUp]
         public void Setup()
         {
+            // Specify the input file path and name.
+            //
             string filePath = Directory.GetCurrentDirectory() + "\\";
             string inputFileName = "InputAnagramFile.txt";
+
+            // Specify the separator of word.
+            //
             char separator = ' ';
 
             anagram = new AnagramManager(filePath, inputFileName, separator);

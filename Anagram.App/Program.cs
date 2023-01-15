@@ -7,10 +7,14 @@ namespace Anagram.App
     {
         static void Main(string[] args)
         {
+            // Specify the input file path and name.
             string filePath = Directory.GetCurrentDirectory() + "\\";
             string inputFileName = "InputAnagramFile.txt";
+
+            // Specify the separator of word.
             char separator = ' ';
 
+            // Create a instance object of AnagramManager. 
             AnagramManager anagram = new AnagramManager(filePath, inputFileName, separator);
 
             // Get input file and write out file that contains all anagrams. 
