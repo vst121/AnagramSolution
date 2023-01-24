@@ -29,7 +29,7 @@ namespace Anagram.App
 
         private void ReadInputFile()
         {
-            string inputFile = _filePath + _inputFileName;
+            string inputFile = string.Concat(_filePath, _inputFileName);
             long itemNum = 0;
 
             string fileString = File.ReadAllText(inputFile);
@@ -64,7 +64,7 @@ namespace Anagram.App
 
         private void WriteToFile()
         {
-            string outputFile = _filePath + _inputFileName + ".Output.txt";
+            string outputFile = string.Concat(_filePath, _inputFileName, ".Output.txt");
 
             File.Delete(outputFile);
             using FileStream fileOutput = File.OpenWrite(outputFile);

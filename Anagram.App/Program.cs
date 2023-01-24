@@ -8,7 +8,7 @@ namespace Anagram.App
         static void Main(string[] args)
         {
             // Specify the input file path and name.
-            string filePath = Directory.GetCurrentDirectory() + "\\";
+            string filePath = string.Concat(Directory.GetCurrentDirectory(), "\\");
             string inputFileName = "InputAnagramFile.txt";
 
             // Specify the separator of word.
@@ -56,7 +56,7 @@ namespace Anagram.App
                 Console.WriteLine(result);
             }
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
