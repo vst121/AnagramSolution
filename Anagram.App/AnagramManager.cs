@@ -33,15 +33,12 @@ namespace Anagram.App
             long itemNum = 0;
 
             string fileString = File.ReadAllText(inputFile);
-
-            var arrayString = fileString.Split(_seperatorChar);
-            foreach (var item in arrayString)
+            string[] arrayString = fileString.Split(_seperatorChar);
+            foreach (string item in arrayString)
             {
-                Int64.TryParse(item, out itemNum);
-
-                if (itemNum > 0)
+                if (long.TryParse(item, out itemNum))
                 {
-                    if (!(numbers.Find(i => i == itemNum) > 0))
+                    if (!numbers.Contains(itemNum))
                         numbers.Add(itemNum);
                 }
                 else
@@ -59,7 +56,6 @@ namespace Anagram.App
 
         private string GetSortedValue(string str)
         {
-
             var itemArray = str.ToUpper().ToCharArray();
             Array.Sort(itemArray);
 
@@ -71,9 +67,8 @@ namespace Anagram.App
             string outputFile = _filePath + _inputFileName + ".Output.txt";
 
             File.Delete(outputFile);
-            var fileOutput = File.OpenWrite(outputFile);
-
-            foreach (var (key, value) in anagrams)
+            using FileStream fileOutput = File.OpenWrite(outputFile);
+            foreach (var (_, value) in anagrams)
             {
                 foreach (var item in value)
                 {
@@ -83,16 +78,11 @@ namespace Anagram.App
 
                 fileOutput.Write(Encoding.UTF8.GetBytes("\r\n\r\n"));
             }
-
-            fileOutput.Close();
-            fileOutput.Dispose();
         }
 
         public string GetAnagramsForEnteredValue(string userWord)
         {
             string result = "";
-
-
             string itemSortedString = GetSortedValue(userWord);
 
             if (anagrams.ContainsKey(itemSortedString))
@@ -100,7 +90,7 @@ namespace Anagram.App
                 List<string> res = new List<string>();
                 res = anagrams[itemSortedString];
 
-                if (anagrams[itemSortedString].Find(i => i.ToLower() == userWord.ToLower()) is null)
+                if (!anagrams[itemSortedString].Contains(userWord.ToUpper()))
                     anagrams[itemSortedString].Add(userWord);
 
                 foreach (var r in res)
@@ -117,7 +107,7 @@ namespace Anagram.App
             bool result = false;
             long userNumRoot;
             userNumRoot = CalculateFactorialRoot(userNum);
-            if (userNumRoot > 0 && (numbers.Find(i => i == userNumRoot) > 0))
+            if (userNumRoot > 0 && (numbers.Contains(userNumRoot)))
                 result = true;
 
             factorialRoot = userNumRoot;
