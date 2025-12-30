@@ -1,6 +1,6 @@
 # Anagram Solution
 
-#### According to definition of anagram, An anagram is a word or phrase formed by rearranging the letters in another word or phrase. It is important to note that the word or phrases that an anagram creates must be actual words or phrases, otherwise it is just gibberish.
+#### According to definition of anagram, an anagram is a word or phrase formed by rearranging the letters in another word or phrase. It is important to note that the word or phrases that an anagram creates must be actual words or phrases, otherwise it is just gibberish.
 
 In this simple project, I focus only on anagram words and do not pay attention to the meaning of the word. I process a file in a simple way (capitalizing and sorting each word), then try to add each word as a key to anagram dictionary. 
 
